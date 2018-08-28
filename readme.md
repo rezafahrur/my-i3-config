@@ -4,9 +4,9 @@ Dotfiles
 ## Current Configuration
 This is my Set up
 
-![Desktop Screenshot](https://pasteboard.co/HBijmSn.png)
+![Desktop Screenshot](https://cdn.pbrd.co/images/HBijmSn.png)
 
-[More Screenshots](https://pasteboard.co/HBijmSn.png)
+
 
 
 
@@ -19,7 +19,7 @@ This is my Set up
 - [i3-gaps](https://github.com/Airblader/i3) -- Window Manager
 - [i3lock-fancy](https://github.com/meskarune/i3lock-fancy) -- Lock Screen
 - [Rofi](https://github.com/DaveDavenport/rofi) -- Application Launcher
-- [Dunst] (https://github.com/dunst-project/dunst) -- Notification Daemon
+- [Dunst](https://github.com/dunst-project/dunst) -- Notification Daemon
 
 ***
 
