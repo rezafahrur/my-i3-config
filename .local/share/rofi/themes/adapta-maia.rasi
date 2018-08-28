@@ -1,0 +1,127 @@
+/* copy this file to ~/.local/share/rofi/themes or /usr/share/rofi/themes */
+/* add theme to config.rasi */
+/* rasi theme by Reza Fahrur*/
+
+configuration {
+  kb-mode-next: "Shift+Right";
+  kb-mode-previous: "Shift+Left";
+  columns: 1;
+  // The display name of this browser
+     display-drun:                   "";
+  // The display name of this browser
+     display-window:                 "";
+     display-combi:                  "";
+  // The display name of this browser
+      display-ssh:                   "  ";
+  // The display name of this browser
+     display-run:                    "";
+ show-icons: true;
+}
+
+
+* {
+  fg: rgba(   255,   255,   255, 100 % );
+  bg: rgba(  40, 51, 57, 100 % );
+  below-bg: rgba( 40, 51, 57, 100 % );
+  selected-bg: rgba( 23, 152, 128, 100 % );
+  selected-fg: @fg;
+}
+
+#window {
+  background-color: rgba(255,255,255,30%);
+  padding: 20px;
+  border-radius: 5px;
+  location: center;
+  anchor: center;
+}
+#mainbox {
+  background-color: transparent;
+  children: [sidebar,inputbar,dummy,listview];
+  spacing: 0;
+}
+#sidebar {
+  background-color: transparent;
+  spacing: 0;
+}
+#button {
+  background-color: @fg;
+  text-color: @bg;
+  padding: 10px;
+  expand: false;
+}
+#button.selected {
+  background-color: @bg;
+  text-color: @fg;
+}
+#inputbar {
+  background-color: @bg;
+  text-color: @fg;
+  padding: 30px;
+  border-radius: 10px;
+  spacing: 10px;
+}
+#prompt {
+  background-color: @bg;
+  text-color: @fg;
+  font: "Ubuntu 20";
+}
+#case-indicator {
+  background-color: @bg;
+  text-color: @fg;
+  font: "Ubuntu 20";
+}
+#entry {
+  background-color: @bg;
+  text-color: @fg;
+  font: "Ubuntu 20";
+}
+#dummy {
+  background-color: transparent;
+  expand: false;
+  padding: 5px 0px 0px 0px;
+}
+#listview {
+  background-color: @below-bg;
+  spacing: 0;
+  border-radius: 5px;
+}
+#element {
+  background-color: transparent;
+  padding: 10px;
+}
+#element.normal.normal {
+  background-color: @below-bg;
+  text-color:       @fg;
+}
+#element.normal.urgent {
+  background-color: @below-bg;
+  text-color:       @fg;
+}
+#element.normal.active {
+  background-color: @below-bg;
+  text-color:       @fg;
+}
+#element.selected.normal {
+  background-color: @selected-bg;
+  text-color:       @selected-fg;
+}
+#element.selected.urgent {
+  background-color: @selected-bg;
+  text-color:       @selected-fg;
+}
+#element.selected.active {
+  background-color: @selected-bg;
+  text-color:       @selected-fg;
+}
+#element.alternate.normal {
+  background-color: @below-bg;
+  text-color:       @fg;
+}
+#element.alternate.urgent {
+  background-color: @below-bg;
+  text-color:       @fg;
+}
+#element.alternate.active {
+  background-color: @below-bg;
+  text-color:       @fg;
+}

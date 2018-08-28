@@ -1,0 +1,50 @@
+conky.config = {
+	alignment = 'bottom_left',
+	background = true,
+	color2 = 'b0b0b0',
+	cpu_avg_samples = 2,
+	default_color = 'FFFFFF',
+	double_buffer = true,
+	font = 'Bitstream Vera Sans:size=8',
+	draw_shades = false,
+	gap_x = 25,
+	gap_y = 45,
+	minimum_width = 200,
+	no_buffers = true,
+	own_window = true,
+	own_window_type = 'override',
+	own_window_transparent = true,
+	update_interval = 2.0,
+	use_xft = true,
+}
+conky.text = [[
+# Default => color2 5D7B86 color F9FAF9 || Untuk Solarized => Default color 93A1A1 color2 586E75
+${voffset 8}$color${font nimbus mono:bold:pixelsize=17}
+${color ffcdaa}KALENDER ${hr 3}$color
+${execpi 60 DJS=`date +%_d`; cal | sed s/"\(^\|[^0-9]\)$DJS"'\b'/'\1${color orange}'"$DJS"'$color'/}
+
+
+Hai,${color fedcba} Reza
+${voffset 8}$color${font nimbus mono:pixelsize=17}Cuaca Di Malang Saat Ini
+
+${font nimbus mono:bold:pixelsize=18}${color ffcdaa}${texeci 900 curl -s "http://wttr.in/malang?lang=id" | sed -n '3,7{s/\d27\[[0-9;]*m//g;s/^..//;s/ *$//;p}'}
+
+${voffset 8}$color${font Bitstream Vera Sans:size=11}Sedikit Shortcut:
+
+${color2}${font Bitstream Vera Sans:size=10}buka terminal - ${color}Alt+w
+${color2}tutup window - ${color}Alt+F4
+${color2}buka browser - ${color}Alt+F3
+${color2}buka file manager - ${color}Alt+F2
+${color2}ganti ke mode split - ${color}Alt+s
+${color2}ganti ke mode tab - ${color}Alt+t
+${color2}ganti ke mode floating- ${color}Alt+Space
+${color2}dmenu - ${color}Alt+d
+${color2}bmenu - ${color}Alt+Ctrl+b
+${color2}morc_menu - ${color}Alt+z
+${color2}pindah ke workspace 1-9 - ${color}Alt+1-9
+${color2}kirim ke workspace 1-9 - ${color}Alt+Ctrl+1-9
+${color2}pindah workspaces - ${color}Alt+Ctrl+arrowkeys
+${color2}Shutdown Laptop ini - ${color}Alt+q
+
+${color2}help - ${color}Alt+Shift+h
+]]
