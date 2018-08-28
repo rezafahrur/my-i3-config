@@ -4,9 +4,9 @@ Dotfiles
 ## Current Configuration
 This is my Set up
 
-![Desktop Screenshot](https://imgur.com/a/Jf8toYi)
+![Desktop Screenshot](https://pasteboard.co/HBijmSn.png)
 
-[More Screenshots]
+[More Screenshots](https://pasteboard.co/HBijmSn.png)
 
 
 
