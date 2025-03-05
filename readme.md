@@ -2,12 +2,7 @@
 Dotfiles
 
 ## Current Configuration
-This is my Set up
-
-![Desktop Screenshot](https://cdn.pbrd.co/images/HBijmSn.png)
-
-
-
+This is my Set up for i3 window manager for linux
 
 
 ## Dependencies
